@@ -9,7 +9,7 @@ export default function Home() {
     useEffect(() => {
         async function getPosts() {
             try {
-                const response = await fetch("http://localhost:8000");
+                const response = await fetch("https://gin-server-1.onrender.com");
                 if (!response.ok) {
                     throw new Error("Failed to fetch posts.");
                 }
