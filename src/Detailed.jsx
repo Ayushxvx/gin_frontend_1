@@ -12,7 +12,7 @@ export default function PostDetail() {
     useEffect(() => {
         async function fetchPost() {
             try {
-                const response = await fetch(`https://gin-server-1.onrender.com/${id}`); // Adjust the URL as necessary
+                const response = await fetch(`https://gin-server-1.onrender.com/detail/${id}`); // Adjust the URL as necessary
                 if (!response.ok) {
                     throw new Error("Failed to fetch post.");
                 }
