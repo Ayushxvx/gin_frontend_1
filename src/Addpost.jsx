@@ -19,7 +19,7 @@ export default function AddPost() {
         }
 
         try {
-            const response = await fetch('http://localhost:8000/addpost', {
+            const response = await fetch('https://gin-server-1.onrender.com/addpost', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
